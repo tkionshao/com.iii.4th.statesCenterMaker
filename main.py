@@ -45,4 +45,4 @@ if __name__ == '__main__':
     rst_sc_df['vil'] = rst_sc_df['center'].apply(lambda x: geoFunction(x)['里'])
 
     # print(rst_sc_df.info())
-    rst_sc_df.to_csv('data/map_states_in_taipei.csv',index=False)
+    rst_sc_df.to_csv('data/map_states_in_taipei_copy.csv',index=False)

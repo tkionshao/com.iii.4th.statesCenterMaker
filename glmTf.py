@@ -3,6 +3,9 @@ import re
 from pprint import pprint
 # from time import sleep
 
+# EXCEPTION
+class informationWrong(Exception):pass
+
 # GOOGLE API
 class googleUClientCreater:
     def __init__(self,key):
@@ -13,14 +16,22 @@ class googleUClientCreater:
         # sleep(1)
         try:
             print('type 1')
-            political_1 = res[0]['address_components'][3]['long_name']
-            political_2 = res[0]['address_components'][2]['long_name']
-            if ('區' not in political_1) and ('里' not in political_2):False
+            i = 0
+            while True:
+                political_1 = res[i]['address_components'][1]['long_name']
+                political_2 = res[i]['address_components'][0]['long_name']
+                if political_1.find('區') != -1:
+                    break
+                elif i >= 5:
+                    raise informationWrong
+                else:
+                    print('next')
+                    i += 1
 
-        except:
+        except informationWrong:
             print("type 2")
-            political_1 = res[2]['address_components'][1]['long_name']
-            political_2 = res[2]['address_components'][0]['long_name']
+            political_1 = test_res[0]['address_components'][3]['long_name']
+            political_2 = test_res[0]['address_components'][2]['long_name']
             # if '區' not in political_1 and '里' not in political_2:False
 
         finally:
@@ -28,6 +39,7 @@ class googleUClientCreater:
             #     political_1 = res[1]['address_components'][1]['long_name']
             #     political_2 = res[1]['address_components'][1]['long_name']
             return {'區': political_1, '里': political_2}
+
 
 def stat_code_compute(x):
     scale_km = 0.5
