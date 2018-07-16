@@ -4,10 +4,10 @@ from pprint import pprint
 from glmTf import googleUClientCreater
 
 
-dt_bs = pd.read_csv('data/map_states_in_taipei_copy.csv')
+dt_bs = pd.read_csv('data/map_states_in_taipei_copy_NaN.csv')
 dt_bs
 # dt_bs.to_csv('data/incorrect.csv')
-dt_bs[dt_bs['dist'].str.contains('區') == False]
+dt_bs[~dt_bs['dist'].isnull()].to_csv("data/map_states_in_taipei_clean_complete.csv")
 
 
 key = 'AIzaSyDmjTq17LmNHYeoWhf5R57QsxqM92bvaaE'

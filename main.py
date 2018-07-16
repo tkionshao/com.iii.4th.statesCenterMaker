@@ -22,7 +22,7 @@ def centerSept(x):pass
 if __name__ == '__main__':
 
     # READ DATA
-    rst = pd.read_csv("data/restaurant_clean.csv")
+    rst = pd.read_csv("data/og/restaurant_clean.csv")
     rst = rst[rst['status'] != '已歇業']
     rst.count()
     rst_sc_ay = rst['state_code'].unique()
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     rst_sc_df['vil'] = rst_sc_df['center'].apply(lambda x: geoFunction(x)['里'])
 
     # print(rst_sc_df.info())
-    rst_sc_df.to_csv('data/map_states_in_taipei_copy.csv',index=False)
+    rst_sc_df.to_csv('data/map_states_in_taipei_copy_NaN.csv',index=False)

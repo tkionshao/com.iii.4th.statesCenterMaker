@@ -13,32 +13,18 @@ class googleUClientCreater:
 
     def getInformation(self,center):
         res = self.gmaps.reverse_geocode(center,language='zh-TW')
-        # sleep(1)
+        res_str = str(res)
         try:
-            print('type 1')
-            i = 0
-            while True:
-                political_1 = res[i]['address_components'][1]['long_name']
-                political_2 = res[i]['address_components'][0]['long_name']
-                if political_1.find('區') != -1:
-                    break
-                elif i >= 5:
-                    raise informationWrong
-                else:
-                    print('next')
-                    i += 1
-
-        except informationWrong:
-            print("type 2")
-            political_1 = test_res[0]['address_components'][3]['long_name']
-            political_2 = test_res[0]['address_components'][2]['long_name']
-            # if '區' not in political_1 and '里' not in political_2:False
-
-        finally:
-            # if '區' not in political_1 or '里' not in political_2:
-            #     political_1 = res[1]['address_components'][1]['long_name']
-            #     political_2 = res[1]['address_components'][1]['long_name']
+            political_1 = re.findall("'(..)里", res_str)[0] + '區'
+            political_2 = re.findall("'(..)區", res_str)[0] + '里'
+            print(political_1,political_2)
             return {'區': political_1, '里': political_2}
+        except:
+            political_1 = None
+            political_2 = None
+            print(res)
+            return {'區': political_1, '里': political_2}
+
 
 
 def stat_code_compute(x):
