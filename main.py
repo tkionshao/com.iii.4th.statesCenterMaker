@@ -45,7 +45,7 @@ if __name__ == '__main__':
     rst_sc_df['vil'] = rst_sc_df['center'].apply(lambda x: geoFunction(x)['里'])
 
     # DROP NULL AND OUTPUT FILE
-    rst_sc_df[~rst_sc_df['dist'].isnull()].to_csv('data/map_states_tpe_csv')
+    rst_sc_df[~rst_sc_df['dist'].isnull()].to_csv('data/map_states_tpe_csv',index=False)
 
     # print(rst_sc_df.info())
     # rst_sc_df.to_csv('data/map_states_in_taipei_copy_clean_complete.csv',index=False)
