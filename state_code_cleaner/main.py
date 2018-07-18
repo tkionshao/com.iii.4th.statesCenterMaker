@@ -11,21 +11,18 @@ def state_code_to_int(x):
 
 # rst ne
 def state_code_cleaner(df):
-     df['len'] = df['state_code'].apply(lambda x: len(x))
+     df['state_code'] = df['state_code'].apply(str)
+     df['len'] = df['state_code'].apply(lambda x: len((x)))
      tmp1 = df[(df['len'] == 9) & (~df['state_code'].str.contains('-'))]
      tmp2 = tmp1.drop(['len'],axis=1)
      df_fn = tmp2.apply(state_code_to_int,axis=1)
      # print(tmp2.head())
      return df_fn
 
-# print(rst_fn['state_code'])
-# print(rst_fn.info())
-# print(rst.info())
-
 if __name__ == '__main__':
 
      fileIn = sys.argv[1]
-     fileOut = fileIn[:-4] + '_cleaned.csv'
+     fileOut = fileIn[:-4] + '_clr.csv'
 
      df = pd.read_csv(fileIn)
      global i

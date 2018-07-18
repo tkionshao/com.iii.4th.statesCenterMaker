@@ -18,12 +18,12 @@ class googleUClientCreater:
             political_1 = re.findall("'(..)里", res_str)[0] + '里'
             political_2 = re.findall("'(..)區", res_str)[0] + '區'
             print(political_1,political_2)
-            return {'里': political_1, '區': political_2}
+            return {'區': political_2,'里': political_1 }
         except:
             political_1 = None
             political_2 = None
             print(res)
-            return {'里': political_1, '區': political_2}
+            return {'區': political_2,'里': political_1 }
 
 
 
