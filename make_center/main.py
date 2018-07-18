@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     # IO
     fileIn = sys.argv[1]
-    fileOut = fileIn[:-4]+'_stcode_range.csv'
+    fileOut = fileIn[:-4]+'_ranger.csv'
 
     # READ DATA
     df = pd.read_csv(fileIn)
