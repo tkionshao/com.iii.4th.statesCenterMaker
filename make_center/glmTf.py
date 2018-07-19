@@ -15,6 +15,8 @@ class googleUClientCreater:
         res = self.gmaps.reverse_geocode(center,language='zh-TW')
         res_str = str(res)
         try:
+            if res_str.find('台北市') == -1:
+                raise
             political_1 = re.findall("'(..)里", res_str)[0] + '里'
             political_2 = re.findall("'(..)區", res_str)[0] + '區'
             print(political_2,political_1)
