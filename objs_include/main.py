@@ -15,4 +15,4 @@ print(df.count())
 print(df.groupby(['dist']).size())
 print(df.groupby(['dist']).size().count())
 
-df.to_csv('partOfBigTable-{}.csv'.format(datetime.now().date()))
+df.to_csv('partOfBigTable-{}.csv'.format(datetime.now().date()),index=False)
