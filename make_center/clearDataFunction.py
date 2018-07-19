@@ -20,7 +20,7 @@ def centerProducer(state_code):
 def bigTableProducer(fileIn):
     # IO
     separator = fileIn.rfind('/')
-    fileOut = fileIn[:separator] + '/outpur' + fileIn[separator:-4] + '_ranger.csv'
+    fileOut = fileIn[:separator] + '/output' + fileIn[separator:-4] + '_ranger.csv'
 
     # READ DATA
     df = pd.read_csv(fileIn)
