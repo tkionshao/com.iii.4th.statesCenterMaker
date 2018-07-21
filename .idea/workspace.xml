@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa2f40f-9d8e-46cb-a4e4-2dc1acf11414" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/objs_include/big_table_clear.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objs_include/cordinate_to_km.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/objs_include/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/objs_include/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs_include/partOfBigTable-2018-07-20.csv" beforeDir="false" afterPath="$PROJECT_DIR$/objs_include/partOfBigTable-2018-07-20.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/illegal_don_clr.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/illegal_clr.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +45,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objs_include/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+            <state relative-caret-position="330">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -261,9 +258,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5002633" side_tool="true" weight="0.4888889" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997367" visible="true" weight="0.35288888" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997367" weight="0.3848889" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32977778" />
       <window_info id="Structure" order="1" sideWeight="0.5008696" side_tool="true" weight="0.2159031" />
       <window_info anchor="bottom" id="Terminal" weight="0.36533332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -434,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/objs_include/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="43" column="63" lean-forward="true" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
