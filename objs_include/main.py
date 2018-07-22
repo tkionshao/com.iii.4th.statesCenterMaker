@@ -26,7 +26,7 @@ if __name__ == '__main__':
     # OBJECTS
     ## SINGLE ONE TEST
     path = '../projectData/{}_clr.csv'
-    category = ['mrt', 'hsp_and_clc', 'illegal','night_club','ubike']
+    category = ['mrt', 'hsp_and_clc', 'illegal','night_club','ubike','edu_all_statecode']
     num = int(sys.argv[1])
     obj_df = pd.read_csv(path.format(category[num]))
     obj_df['km_x'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lat'], axis=1)
