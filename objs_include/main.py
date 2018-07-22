@@ -1,6 +1,7 @@
 import pandas as pd
 import cordinate_to_km
 from math import pow, sqrt
+import sys
 
 def calculation_dist(obj_xy_list,state_center):
     count = 0
@@ -15,18 +16,18 @@ def calculation_dist(obj_xy_list,state_center):
 if __name__ == '__main__':
     # CALCULATE KM IN BIG TABLE
     bigTable = pd.read_csv('../projectData/bigTable_much_ranger.csv')
-    print(bigTable.info())
+    # print(bigTable.info())
 
     bigTable['km_x'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lat'], axis=1)
     bigTable['km_y'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lon'], axis=1)
 
-    print(bigTable.info())
+    # print(bigTable.info())
 
     # OBJECTS
     ## SINGLE ONE TEST
     path = '../projectData/{}_clr.csv'
-    category = ['mrt', 'hsp_and_clc', 'illegal']
-    num = 2
+    category = ['mrt', 'hsp_and_clc', 'illegal','night_club','ubike']
+    num = int(sys.argv[1])
     obj_df = pd.read_csv(path.format(category[num]))
     obj_df['km_x'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lat'], axis=1)
     obj_df['km_y'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lon'], axis=1)
@@ -40,5 +41,9 @@ if __name__ == '__main__':
         # print(objs_y_list)
         bigTable.loc[i,category[num]] = calculation_dist(objs_xy_list,state_center_km)
 
-    print(bigTable[bigTable[category[num]] > 1].sort_values(category[num],ascending=False))
-    print(bigTable[bigTable['state_code'] == 553526927]['center'])
+    res = bigTable[bigTable[category[num]] > 1].sort_values(category[num],ascending=False)
+    print(res)
+    print('==== =Top 10 {} ====='.format(category[num]))
+    print(res[0:9].to_string())
+    print(res[0:49].groupby('dist').size())
+    # print(bigTable[bigTable['state_code'] == 553526927]['center'])
