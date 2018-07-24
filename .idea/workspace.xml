@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa2f40f-9d8e-46cb-a4e4-2dc1acf11414" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/state_code_compute/106Traffic_state_Done.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/objs_include/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/objs_include/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectData/illegal_don_clr.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/illegal_clr.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/cloth_done_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/cloth_done_clr_ranger.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/convStore_done_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/convStore_done_clr_ranger.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/house_all_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/house_all_clr_ranger.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/job_stat_code_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/job_stat_code_clr_ranger.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/lease_all_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/lease_all_clr_ranger.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectData/output/restaurant_statcode_clr_ranger.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projectData/output/restaurant_statcode_clr_ranger.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,12 +24,12 @@
     <favorites_list name="com.iii.4th.state-center-maker" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="big_table_clear.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/objs_include/big_table_clear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="150">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -30,13 +37,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cordinate_to_km.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/objs_include/cordinate_to_km.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/make_center/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="169">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="implements_muti_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/make_center/implements_muti_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +61,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/objs_include/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state relative-caret-position="238">
+              <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -63,6 +79,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,6 +96,7 @@
         <option value="$PROJECT_DIR$/make_center/clearDataFunction.py" />
         <option value="$PROJECT_DIR$/objs_include/big_table_clear.py" />
         <option value="$PROJECT_DIR$/objs_include/cordinate_to_km.py" />
+        <option value="$PROJECT_DIR$/state_code_compute/main.py" />
         <option value="$PROJECT_DIR$/objs_include/main.py" />
       </list>
     </option>
@@ -102,6 +124,11 @@
             <path>
               <item name="com.iii.4th.state-center-maker" type="b2602c69:ProjectViewProjectNode" />
               <item name="com.iii.4th.state-center-maker" type="462c0819:PsiDirectoryNode" />
+              <item name="make_center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.iii.4th.state-center-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.iii.4th.state-center-maker" type="462c0819:PsiDirectoryNode" />
               <item name="objs_include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -112,7 +139,18 @@
             <path>
               <item name="com.iii.4th.state-center-maker" type="b2602c69:ProjectViewProjectNode" />
               <item name="com.iii.4th.state-center-maker" type="462c0819:PsiDirectoryNode" />
+              <item name="projectData" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.iii.4th.state-center-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.iii.4th.state-center-maker" type="462c0819:PsiDirectoryNode" />
               <item name="state_code_cleaner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.iii.4th.state-center-maker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.iii.4th.state-center-maker" type="462c0819:PsiDirectoryNode" />
+              <item name="state_code_compute" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,6 +162,15 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/cyh/Documents/megaSync/com.iii.4.proj/com.iii.4th.state-center-maker/objs_include/cordinate_to_km.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projectData/v1" />
+      <recent name="$PROJECT_DIR$/projectData" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/state_code_compute" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,6 +203,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="implements_muti_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="com.iii.4th.state-center-maker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/make_center" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_center/implements_muti_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="com.iii.4th.state-center-maker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,6 +234,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/objs_include/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="com.iii.4th.state-center-maker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/state_code_compute" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/state_code_compute/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,36 +275,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="muti_data_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="com.iii.4th.state-center-maker" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/make_center" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_center/muti_data_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.muti_data_test" />
       <item itemvalue="Python.cordinate_to_km" />
       <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main (2)" />
+      <item itemvalue="Python.implements_muti_data" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.cordinate_to_km" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.muti_data_test" />
+        <item itemvalue="Python.implements_muti_data" />
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.cordinate_to_km" />
       </list>
     </recent_temporary>
   </component>
@@ -256,20 +323,20 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913043" visible="true" weight="0.2159031" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5002633" side_tool="true" weight="0.4888889" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997367" weight="0.3848889" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32977778" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002633" side_tool="true" weight="0.4888889" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32977778" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32985783" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32977778" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997367" visible="true" weight="0.6533333" />
       <window_info id="Structure" order="1" sideWeight="0.5008696" side_tool="true" weight="0.2159031" />
-      <window_info anchor="bottom" id="Terminal" weight="0.36533332" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36533332" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008696" side_tool="true" weight="0.2159031" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" sideWeight="0.5008696" side_tool="true" weight="0.2159031" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
@@ -283,8 +350,12 @@
           <url>file://$PROJECT_DIR$/objs_include/big_table_clear.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/make_center/implements_muti_data.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -325,93 +396,9 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/make_center/cleaning_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/glmTf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/state_code_cleaner/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/muti_data_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/iimplement_muti_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/implements_muti_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/clearDataFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="3064" selection-start-line="3064" selection-end-line="3064" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/690644531/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="475" column="4" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_center/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/objs_include/big_table_clear.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="165">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -431,8 +418,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/objs_include/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="735">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/big_table_clear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/cordinate_to_km.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
           <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/cleaning_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/glmTf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/muti_data_test.py" />
+    <entry file="file://$PROJECT_DIR$/make_center/iimplement_muti_data.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="3064" selection-start-line="3064" selection-end-line="3064" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/690644531/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="475" column="4" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/cordinate_to_km.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state_code_compute/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state_code_cleaner/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/clearDataFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_center/implements_muti_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/big_table_clear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objs_include/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
