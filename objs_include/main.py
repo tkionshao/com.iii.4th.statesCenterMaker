@@ -1,18 +1,25 @@
 import pandas as pd
-import cordinate_to_km
-from math import pow, sqrt
+# import cordinate_to_km
+import math
 import numpy as np
 from datetime import datetime
 # import sys
 
-def calculation_dist(obj_xy_list,state_center):
+def calculation_dist(destination,origin):
     count = 0
     ranger = 0
     ranger_list = []
-    for objs_xy in objs_xy_list:
-        x_dist = objs_xy[0] - state_center[0]
-        y_dist = objs_xy[1] - state_center[1]
-        range = round(sqrt(pow(x_dist,2)+pow(y_dist,2)),3)
+    for single_objs in destination:
+        lat1, lon1 = origin
+        lat2, lon2 = single_objs
+        radius = 6371  # km
+
+        dlat = math.radians(lat2 - lat1)
+        dlon = math.radians(lon2 - lon1)
+        a = math.sin(dlat / 2) * math.sin(dlat / 2) + math.cos(math.radians(lat1)) \
+            * math.cos(math.radians(lat2)) * math.sin(dlon / 2) * math.sin(dlon / 2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        range = radius * c
 
         # IF RANGE IN 1.5 KM
         if range < 1.5:
@@ -27,28 +34,13 @@ def calculation_dist(obj_xy_list,state_center):
         ranger_np = np.array(ranger_list)
         return np.std(ranger_np,axis=0)
 
-def distance(origin, destination):
-    lat1, lon1 = origin
-    lat2, lon2 = destination
-    radius = 6371 # km
-
-    dlat = math.radians(lat2-lat1)
-    dlon = math.radians(lon2-lon1)
-    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) \
-        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-    d = radius * c
-
-    return d
-
-
 if __name__ == '__main__':
     # CALCULATE KM IN BIG TABLE
     bigTable = pd.read_csv('partOfBigTable-2018-07-24.csv')
     print(bigTable.info())
 
-    bigTable['km_x'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lat'], axis=1)
-    bigTable['km_y'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lon'], axis=1)
+    # bigTable['km_x'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lat'], axis=1)
+    # bigTable['km_y'] = bigTable.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['center_lat'],x['center_lon'])['lon'], axis=1)
 
     # print(bigTable.info())
 
@@ -59,17 +51,14 @@ if __name__ == '__main__':
     # num = int(sys.argv[1])
     for num in range(len(category)):
         obj_df = pd.read_csv(path.format(category[num]))
-        obj_df['km_x'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lat'], axis=1)
-        obj_df['km_y'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lon'], axis=1)
+        # obj_df['km_x'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lat'], axis=1)
+        # obj_df['km_y'] = obj_df.apply(lambda x: cordinate_to_km.lat_lon_to_km(x['lat'],x['lon'])['lon'], axis=1)
         print(obj_df.info())
-        objs_xy_list = list(zip(obj_df['km_x'].tolist(),obj_df['km_y'].tolist()))
+        objs_loc = list(zip(obj_df['lat'].tolist(),obj_df['lon'].tolist()))
 
         for i in range(bigTable.count()['state_code']):
-            state_center_km = bigTable.loc[i,'km_x'],bigTable.loc[i,'km_y']
-            # print(state_center_km)
-            # print(objs_x_list)
-            # print(objs_y_list)
-            bigTable.loc[i,category[num]] = calculation_dist(objs_xy_list,state_center_km)
+            state_center = bigTable.loc[i,'center_lat'],bigTable.loc[i,'center_lon']
+            bigTable.loc[i,category[num]] = calculation_dist(objs_loc,state_center)
 
         res = bigTable[bigTable[category[num]] > 1].sort_values(category[num],ascending=False)
         print(res)
