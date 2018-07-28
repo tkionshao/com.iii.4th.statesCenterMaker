@@ -21,11 +21,26 @@ def calculation_dist(obj_xy_list,state_center):
             ranger_list.append(range)
     if count == 0:
         return 0
-    # IF THERE HAS ANY ONJS, GET ITS STANDARD DEVIATION
+    # IF THERE HAS ANY ONJS INCLUDED, GET ITS STANDARD DEVIATION
     else:
         # res = round(ranger / count,2)
         ranger_np = np.array(ranger_list)
         return np.std(ranger_np,axis=0)
+
+def distance(origin, destination):
+    lat1, lon1 = origin
+    lat2, lon2 = destination
+    radius = 6371 # km
+
+    dlat = math.radians(lat2-lat1)
+    dlon = math.radians(lon2-lon1)
+    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) \
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    d = radius * c
+
+    return d
+
 
 if __name__ == '__main__':
     # CALCULATE KM IN BIG TABLE
